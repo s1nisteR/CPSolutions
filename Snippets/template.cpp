@@ -1,28 +1,30 @@
+
 #include <bits/stdc++.h>
 
 using namespace std;
 
-
+using ll = long long;
 
 void solve()
 {
-    //SOLVE THE NEXT BIG THING HERE!
+	
+    //Solve here
 }
 
-
-
+    
+    
 int main()
 {
-
 #ifndef ONLINE_JUDGE
-    freopen("inputf.in","r",stdin);
-    freopen("outputf.in","w",stdout);
+    (void)!freopen("input.txt","r",stdin);
+    (void)!freopen("output.txt","w",stdout);
 #endif
 
     //Fast IO
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
+
     
     /*
     long long t;
@@ -32,8 +34,10 @@ int main()
         solve();
     }
     */
-
+    
     solve();
 
     return 0;
 }
+
+
