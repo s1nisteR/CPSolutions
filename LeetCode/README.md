@@ -1,1 +1,1 @@
-#A LeetCode a day keeps the unemployment away!
+# One LeetCode a day keeps the unemployment away!
