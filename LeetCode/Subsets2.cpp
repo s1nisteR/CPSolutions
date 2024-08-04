@@ -92,7 +92,7 @@ private:
 
         //do not include m_nums[i]
         subset.pop_back();
-        while((i + 1) < m_nums.size() && m_nums[i] == m_nums[i + 1])
+        while(i < m_nums.size() - 1 && m_nums[i] == m_nums[i + 1])
         {
             i++;
         }
@@ -106,7 +106,7 @@ private:
 int main()
 {
     Solution sln;
-    vector<int> nums = { 4, 4, 4, 4 };
+    vector<int> nums = { 4, 4, 4, 1, 4 };
     
     vector<vector<int> > result = sln.subsetsWithDup(nums);
 
