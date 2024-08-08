@@ -18,20 +18,11 @@ class Solution
 public:
     TreeNode* invertTree(TreeNode* root) 
     {
-        _traverseAndInvert(root);
+        if(root == nullptr) return nullptr;
+        TreeNode* tmp = invertTree(root->left);
+        root->left = invertTree(root->right);
+        root->right = tmp;
         return root;
-    }
-private:
-    void _traverseAndInvert(TreeNode* root)
-    {
-        if(root == nullptr) return;
-
-        _traverseAndInvert(root->left);
-        _traverseAndInvert(root->right);
-
-        TreeNode* tmp = root->right;
-        root->right = root->left;
-        root->left = tmp;   
     }
 };
 
